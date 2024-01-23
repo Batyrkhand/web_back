@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 app.get('/getWeather', async (req, res) => {
   try {
-    const apiKey = '2b350a87de1accceaaa66f9966efb1fe';
+    const apiKey = '28be6d9b0ad44368b9f192058242301 ';
     const city = req.query.city || 'New York';
 
     const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`);
